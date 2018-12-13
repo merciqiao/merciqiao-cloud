@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: merciqiao-register-center
+  profiles:
+      active: dev
+server:
+  port: 8001
+
+
+---
+spring:
+  profiles: dev
+  datasource:
+    #不加密,允许一次执行多条sql,允许设置数据库编码且为utf-8
+    url: jdbc:mysql://localhost:3306/mytest?useUnicode=true&useSSL=false&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis配置
+mybatis:
+  #扫描的实体路径
+  typeAliasesPackage: com.merciqiao.service.mysql.entity
+  #扫描的xml路径
+  mapperLocations: classpath*:com/merciqiao/service/mysql/mapping/*.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+#配置demo区 start------------
+
+# mybatis配置 通配符配置demo
+#mybatis:
+#  typeAliasesPackage: com.carloan.service.admin.**.dto
+#  mapperLocations: classpath*:com/carloan/service/admin/*/dao/*.xml
+
+
+#配置demo区 end
+

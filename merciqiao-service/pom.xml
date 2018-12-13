@@ -14,5 +14,25 @@
     <modules>
         <module>merciqiao-service-mysql</module>
     </modules>
+    <dependencies>
+        <!--Eureka 服务提供者start-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+        <!--</dependency>-->
+        <!--Eureka 服务提供者end-->
 
+        <!--swagger 构建restful api 版本不建议更改,会有兼容问题 start-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <!--swagger 构建restful api end-->
+    </dependencies>
 </project>
