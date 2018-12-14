@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: merciqiao-service-mongo
+  profiles:
+      active: dev
+server:
+  port: 8002
+
+
+
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      uri: mongodb://172.24.132.127:27017/risk_controll

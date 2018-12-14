@@ -6,6 +6,7 @@ import com.merciqiao.service.mysql.entity.CourseEntity;
 import com.merciqiao.service.mysql.entity.StudentEntity;
 import com.merciqiao.service.mysql.service.CourseService;
 import com.merciqiao.service.mysql.service.StudentService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ import java.util.Map;
 @RestController
 @RequestMapping(value="/merciqiao-mysql-api")
 @Slf4j
+@Api(description = "整合mybatis接口")
 public class Controller {
     @Autowired
     StudentService studentService;
