@@ -23,6 +23,13 @@
         <!--</dependency>-->
         <!--Eureka 服务提供者end-->
 
+        <!--提供restful接口 spring boot,tomcat start-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--提供restful接口 spring boot,tomcat end-->
+
         <!--swagger 构建restful api 版本不建议更改,会有兼容问题 start-->
         <dependency>
             <groupId>io.springfox</groupId>

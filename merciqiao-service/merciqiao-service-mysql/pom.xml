@@ -12,12 +12,7 @@
     <artifactId>merciqiao-service-mysql</artifactId>
 
     <dependencies>
-        <!--提供restful接口start-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!--提供restful接口end-->
+
 
         <!--mysql+mybatis start-->
         <dependency>
