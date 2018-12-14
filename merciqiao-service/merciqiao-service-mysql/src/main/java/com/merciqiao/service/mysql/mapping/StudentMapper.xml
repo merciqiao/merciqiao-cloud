@@ -7,7 +7,7 @@
     <result column="address" property="address" jdbcType="VARCHAR" />
   </resultMap>
 
-  <insert id="insert" parameterType="com.yingu.project.persistence.mysql.entity.StudentEntity" >
+  <insert id="insert" parameterType="com.merciqiao.service.mysql.entity.StudentEntity" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
